@@ -28,7 +28,7 @@
 
     extension UIViewController {
 
-        static func topViewController(_ viewController: UIViewController) -> UIViewController {
+        public static func topViewController(_ viewController: UIViewController) -> UIViewController {
             guard let presentedViewController = viewController.presentedViewController else {
                 return viewController
             }
